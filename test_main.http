@@ -1,0 +1,22 @@
+# Test your FastAPI endpoints
+@base=http://localhost:8000
+
+GET {{base}}/api/v0/report?from=1024-03-25T00:30:39&to=2024-03-25T23:30:39
+Accept: application/json
+
+###
+
+GET {{base}}/api/v0/report?from=1024-03-25T00:30:39
+Accept: application/json
+
+###
+
+GET {{base}}/api/v0/search?domain=google.com
+Accept: application/json
+
+###
+
+GET {{base}}/api/v0/report
+Accept: application/json
+
+###

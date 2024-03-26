@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "phishtank"
+version = "0.1.0"
+description = ""
+authors = ["Pacula, Josef <josef.pacula@oracle.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.1"
+uvicorn = "^0.29.0"
+fastapi = "^0.110.0"
+peewee = "^3.17.1"
+pydantic-settings = "^2.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
